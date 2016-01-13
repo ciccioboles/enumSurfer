@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="enumTut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-Zs-Rvl">
+                                <rect key="frame" x="191" y="54" width="219" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="FPP-nC-SFN"/>
+                                    <constraint firstAttribute="width" constant="219" id="gXT-Gf-Ge3"/>
+                                </constraints>
+                                <state key="normal" image="rincon"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otw-R3-61a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5W-lL-zHW">
+                                <rect key="frame" x="191" y="171" width="219" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="Oj3-oA-bgk"/>
+                                    <constraint firstAttribute="width" constant="219" id="YBu-sx-YpJ"/>
+                                </constraints>
+                                <state key="normal" image="hossegovr"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tu6-xY-RDb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ5-gP-3vu">
+                                <rect key="frame" x="191" y="292" width="219" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="C8S-m2-7fP"/>
+                                    <constraint firstAttribute="height" constant="102" id="Myb-Bg-Lbh"/>
+                                </constraints>
+                                <state key="normal" image="bali"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fem-gB-Gj5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b2-6Z-QeV">
+                                <rect key="frame" x="191" y="419" width="219" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="ElP-Dl-nDS"/>
+                                    <constraint firstAttribute="width" constant="219" id="LiR-dm-pei"/>
+                                </constraints>
+                                <state key="normal" image="tahiti"/>
+                                <connections>
+                                    <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eqm-Lf-OTO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqt-SA-q4u">
+                                <rect key="frame" x="56" y="541" width="494" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="494" id="DBz-Lr-XJy"/>
+                                    <constraint firstAttribute="height" constant="21" id="I9J-Wj-5FH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HZ5-gP-3vu" firstAttribute="top" secondItem="H5W-lL-zHW" secondAttribute="bottom" constant="19" id="1Mg-J8-1Ew"/>
+                            <constraint firstItem="8b2-6Z-QeV" firstAttribute="top" secondItem="HZ5-gP-3vu" secondAttribute="bottom" constant="25" id="6So-oU-o7V"/>
+                            <constraint firstItem="2bA-Zs-Rvl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6qb-xX-Lpa"/>
+                            <constraint firstItem="2bA-Zs-Rvl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="54" id="785-nB-Rdo"/>
+                            <constraint firstItem="HZ5-gP-3vu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HBV-Hc-dwp"/>
+                            <constraint firstItem="H5W-lL-zHW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ick-Kb-uT1"/>
+                            <constraint firstItem="wqt-SA-q4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="KwE-f5-1aC"/>
+                            <constraint firstItem="H5W-lL-zHW" firstAttribute="top" secondItem="2bA-Zs-Rvl" secondAttribute="bottom" constant="15" id="fcd-Au-QGm"/>
+                            <constraint firstItem="wqt-SA-q4u" firstAttribute="top" secondItem="8b2-6Z-QeV" secondAttribute="bottom" constant="20" id="yWd-03-IlF"/>
+                            <constraint firstItem="8b2-6Z-QeV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zjG-D4-3dl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theLbl" destination="wqt-SA-q4u" id="LaB-wf-50S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bali" width="640" height="412"/>
+        <image name="hossegovr" width="500" height="325"/>
+        <image name="rincon" width="1400" height="683"/>
+        <image name="tahiti" width="620" height="388"/>
+    </resources>
+</document>
